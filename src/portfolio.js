@@ -21,13 +21,13 @@ const illustration = {
 
 const greeting = {
   username: "Syafiqah Hisham",
-  title: "Hi all, I'm Syafiqah",
+  title: "Hi, I'm Syafiqah 👋",
   subTitle: emoji(
-    "My interest in web development started back in 2013 when I decided to try editing custom blogspot themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!"
+    "Backend Java Developer with 3+ years of experience developing enterprise banking applications using Java 21, Spring Boot and Microservices. Passionate about building secure REST APIs, solving production issues and continuously learning cloud technologies."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1dZ7neJkgK_StuZ8FdiFOAVLalGkKvDOt/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "YOUR_RESUME_LINK",
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -48,70 +48,59 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle:
+    "JAVA BACKEND DEVELOPER SPECIALIZING IN ENTERPRISE APPLICATIONS AND MICROSERVICES",
+
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Develop Web Application, setup company server and website"),
-    emoji(
-      "⚡ Integration of third party services"
-    )
+    emoji("⚡ Build scalable RESTful APIs using Java 21, Spring Boot and Spring MVC"),
+    emoji("⚡ Develop enterprise microservices, API integrations and backend business logic"),
+    emoji("⚡ Troubleshoot production issues, perform VAPT remediation and support production deployments"),
+    emoji("⚡ Write clean, maintainable code with Hibernate/JPA, JUnit and Mockito"),
+    emoji("⚡ Currently learning AWS, Docker, Kubernetes and cloud-native development")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "PHP",
-      fontAwesomeClassname: "fab fa-php"
-    },
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Spring",
+      skillName: "Spring Boot",
       fontAwesomeClassname: "fa fa-leaf"
     },
     {
-      skillName: "Thymeleaf",
-      fontAwesomeClassname: "fab fa-envira"
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Maven",
+      fontAwesomeClassname: "fas fa-cogs"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fab fa-jenkins"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
-};
 
+  display: true
+};
 // Education Section
 
 const educationInfo = {
@@ -122,29 +111,25 @@ const educationInfo = {
       logo: require("./assets/images/Logo_Rasmi_UMT.png"),
       subHeader: "Bachelor of Computer Science(Software Engineering)",
       duration: "September 2019 - March 2023",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Bachelor of Computer Science (Software Engineering) with a strong foundation in software development, object-oriented programming, databases and system design.",
       descBullets: [
-       "Object-oriented programming (Java)",
-       "Software testing",
-       "Cyber Security", 
-       "Internet of Things",
-       "Analyst and Designing System",
-       "Web development(Java, Springboot, Mysql"
+        "Java Programming",
+        "Software Engineering",
+        "Software Testing","Database Systems","Web Development","Cyber Security",
+        "System Analysis & Design"
       ]
     },
     {
       schoolName: "Kolej Vokasional Perdagangan Johor Bahru",
       logo: require("./assets/images/Logo_Rasmi_KV.png"),
-      subHeader: "Bachelor of Science in Computer Science",
+      subHeader: "Diploma in Database Management System and Web Application",
       duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      desc: "Completed Diploma in Information Technology with emphasis on software development and web technologies.",
       descBullets: [
-        "Object-oriented programming (PHP)",
-        "Maintenance and evaluation of software ",
+        "PHP Development",
         "Database Management",
-        "Web development (PHP)", 
-        "Mobile Application development",
-        "Analyst and Designing System"
+        "Mobile Application Development",
+        "System Analysis","Software Maintenance"
       ]
     }
   ]
@@ -153,22 +138,32 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
+
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      Stack: "Backend Development",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Backend",
+      Stack: "REST API Development",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Microservices",
       progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "95%"
+      Stack: "Database",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Cloud & DevOps",
+      progressPercentage: "40%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+
+  displayCodersrank: false
 };
 
 // Work experience section
@@ -176,6 +171,25 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+  role: "Microservice Developer",
+  company: "IT services",
+  companylogo: null,
+  date: "2023 - Present",
+  desc:
+    "Develop and maintain enterprise banking backend applications using Java 21, Spring Boot and Microservices.",
+
+  descBullets: [
+    "Develop RESTful APIs for enterprise banking platforms",
+    "Implement business logic, request validation and database enhancements",
+    "Integrate internal banking systems and third-party services",
+    "Support SIT, UAT and production deployments",
+    "Resolve production incidents during go-live",
+    "Perform VAPT remediation for secure production releases",
+    "Develop unit tests using JUnit and Mockito",
+    "Collaborate with Product Owners, QA and Business Analysts in Agile Scrum"
+  ]
+},
     {
       role: "Junior Programmer",
       company: "Edess Education Development And Solutions Specialist Sdn Bhd",
@@ -211,6 +225,14 @@ const bigProjects = {
   title: "Projects",
   subtitle: "Some big projects and complete",
   projects: [
+    {
+projectName:"Credit Card API Integration",
+
+projectDesc:
+"Developed backend microservices for Credit Card enrollment, integrating enterprise banking systems with insurance services through REST APIs and XML request transformation.",
+
+footerLink:[]
+}
     {
       image: require("./assets/images/renbo1.webp"),
       projectName: "Rental and Borrow Management System",
@@ -364,9 +386,9 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let's Connect!"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "I'm open to Backend Java Developer opportunities, collaborations and technical discussions.",
   number: "+60137276046",
   email_address: "syafiqahnabilah98@gmail.com"
 };
